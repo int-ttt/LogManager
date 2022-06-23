@@ -2,8 +2,8 @@ plugins {
     id 'java'
 }
 
-group 'net.intt'
-version '1.0-SNAPSHOT'
+group 'com.github.int-ttt'
+version '1.2.0'
 
 repositories {
     mavenCentral()
@@ -16,7 +16,7 @@ allprojects {
 }
 
 dependencies {
-    implementation 'com.github.int-ttt:LogManager:0.1.0'
+//    implementation 'com.github.int-ttt:LogManager:1.1.1'
 }
 
 test {
