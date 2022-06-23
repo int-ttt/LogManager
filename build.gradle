@@ -16,7 +16,7 @@ allprojects {
 }
 
 dependencies {
-//    implementation 'com.github.int-ttt:LogManager:1.1.1'
+    implementation 'com.github.int-ttt:LogManager:-3d21842279-1'
 }
 
 test {
