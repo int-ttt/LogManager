@@ -3,10 +3,22 @@ plugins {
 }
 
 group 'com.github.int-ttt'
-version '1.3.0'
+version '0.1.0'
 
 repositories {
     mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'net.intt.util.test'
+    }
+    from {
+        configurations.compileClasspath.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
 }
 
 allprojects {
@@ -16,7 +28,7 @@ allprojects {
 }
 
 dependencies {
-    implementation 'com.github.int-ttt:LogManager:master-SNAPSHOT'
+    implementation 'org.jline:jline:3.21.0'
 }
 
 test {
