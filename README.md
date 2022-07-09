@@ -1,4 +1,4 @@
 # LogManager
 ==
 
-this project include my all projects
+my all projects include this project
