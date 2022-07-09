@@ -1,5 +1,7 @@
 package net.intt.util;
 
+import java.io.PrintStream;
+
 public class LogManager {
 
     final String projectName;
@@ -35,8 +37,10 @@ public class LogManager {
         out.println(value);
     }
 
-    public static void main(String[] args) {
-        LogManager log = new LogManager("adf");
-        log.info("asdf");
+    private static class OutPrinter extends PrintStream implements Printer {
+
+        public OutPrinter() {
+            super(System.out);
+        }
     }
 }
